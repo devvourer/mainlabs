@@ -6,7 +6,7 @@ from functools import reduce
 
 
 class OrganizationSerializer(serializers.ModelSerializer):
-    fraud_weight = serializers.SerializerMethodField
+    fraud_weight = serializers.SerializerMethodField()
 
     class Meta:
         model = Organization
